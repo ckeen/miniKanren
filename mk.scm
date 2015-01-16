@@ -640,7 +640,6 @@
              `(absent ,tag ,x)))
          T)))
 
-(define sorter (lambda (ls) (sort lex<=? ls)))
 
 (define sort-part
   (lambda (pr)
@@ -726,15 +725,6 @@
       ((null? A) '())
       (else
        (part (rhs (car A)) A '() '())))))
-
-(define lex<=?
-  (lambda (x y)
-    (string<=? (datum->string x) (datum->string y))))
-
-(define datum->string
-  (lambda (x)
-    (call-with-string-output-port
-      (lambda (p) (display x p)))))
 
 (define-syntax project
   (syntax-rules ()
