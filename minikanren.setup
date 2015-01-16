@@ -1,0 +1,8 @@
+(compile -s "minikanren.scm" -J)
+(compile -s "minikanren.import.scm")
+
+(install-extension
+ 'minikanren
+ '("minikanren.so" "minikanren.import.so")
+ '((version "1")))
+

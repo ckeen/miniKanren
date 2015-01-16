@@ -1,0 +1,7 @@
+((egg "minikanren.egg")
+ (synopsis "")
+ (author "William Byrd")
+ (maintainer "Christian Kellermann")
+ (category logic)
+ (license "MIT")
+ (files "mk.scm" "chicken-prelude.scm" "minikanren.scm"))
